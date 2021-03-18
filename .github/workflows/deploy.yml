@@ -56,7 +56,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: tecnologia-design-tokens
-          path: code
+          path: code/dist
 
       # NPM PUBLISH
       - id: publish
