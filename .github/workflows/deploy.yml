@@ -28,6 +28,7 @@ jobs:
         with:
           node-version: "14.1.x"
 
+      - name
       - run: |
           cd code
           npm ci
@@ -39,7 +40,7 @@ jobs:
           retention-days: 7
           name: tecnologia-design-tokens # artifact name
           path: |
-            dist
+            code/dist
 
   deploy:
     needs: build_and_test
