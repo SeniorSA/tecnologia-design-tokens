@@ -1,0 +1,39 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "tiagoboeing",
+      "name": "Tiago Boeing",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3449932?v=4",
+      "profile": "http://linkedin.com/in/tiagoboeing/",
+      "contributions": [
+        "infra",
+        "code",
+        "design",
+        "projectManagement",
+        "doc"
+      ]
+    },
+    {
+      "login": "lucasreichert3",
+      "name": "Lucas Reichert",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39280222?v=4",
+      "profile": "https://github.com/lucasreichert3",
+      "contributions": [
+        "code",
+        "design",
+        "doc"
+      ]
+    },
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "tecnologia-design-tokens",
+  "projectOwner": "SeniorSA",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
