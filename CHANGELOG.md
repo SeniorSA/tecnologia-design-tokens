@@ -1,5 +1,18 @@
 # Release notes
 
+## 0.2.0
+
+### Features
+
+- Add themes styles files.
+- Post CSS processing:
+  - Creating minified files.
+  - Copy SCSS files to `dist` folder.
+
+### Fix
+
+- Move `LICENSE` for project root.
+
 ## 0.1.2
 
 ### Fix

@@ -4,9 +4,8 @@
   * Licensed under MIT (https://github.com/SeniorSA/tecnologia-design-tokens/blob/master/LICENSE)
 */
 
-@import '../../dist/tokens/scss/variables';
+@import 'mixins/backgrounds';
 
-//  Imports
-@import 'backgrounds';
-@import 'texts';
-@import 'fonts';
+$theme: 'dark';
+
+@include generate-backgrounds($theme);

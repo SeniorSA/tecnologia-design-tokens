@@ -1,0 +1,15 @@
+@import '../../../../dist/tokens/scss/variables';
+
+$status: map-get($tokens, status);
+$keys: map-keys($status);
+
+@mixin generate-backgrounds($theme) {
+  /* #{$theme} backgrounds */
+  @each $key in $keys {
+    $color: map-get($status, $key);
+    $status-color: map-get($color, color);
+    .bg-#{$key} {
+      background-color: map-get($status-color, $theme);
+    }
+  }
+}

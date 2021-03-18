@@ -2,8 +2,8 @@
   "status": {
     "primary": {
       "color": {
-        "light": { "value": "{color.base.sky-blue.100.value}" },
-        "dark": { "value": "{color.base.sky-blue.500.value}" }
+        "light": { "value": "{color.base.sky-blue.500.value}" },
+        "dark": { "value": "{color.base.sky-blue.400.value}" }
       }
     },
     "secondary": {
