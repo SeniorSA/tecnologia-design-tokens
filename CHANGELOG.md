@@ -1,6 +1,12 @@
 # Release notes
 
-## 0.1.0-0
+## 0.1.2
+
+### Fix
+
+- Deploy to version folder on CDN only when the version changed.
+  
+## 0.1.1
 
 ### Improvements
 
