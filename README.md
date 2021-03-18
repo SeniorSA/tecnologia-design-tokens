@@ -4,9 +4,18 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Design tokens created for BPM Suite products. 
-A library using `style-dictionary`.
+
+A library using:
+- `style-dictionary`
+- `gulp` to post CSS processing
+- `SASS`
+
+Distributed via:
+- [NPM](https://www.npmjs.com/package/@seniorsistemas/tecnologia-design-tokens)
+- CDN
 
 ![](assets/img/featured.png)
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
