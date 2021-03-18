@@ -6,17 +6,6 @@
   "commit": false,
   "contributors": [
     {
-      "login": "lucasreichert3",
-      "name": "Lucas Reichert",
-      "avatar_url": "https://avatars.githubusercontent.com/u/39280222?v=4",
-      "profile": "https://github.com/lucasreichert3",
-      "contributions": [
-        "code",
-        "design",
-        "doc"
-      ]
-    },
-    {
       "login": "tiagoboeing",
       "name": "Tiago Boeing",
       "avatar_url": "https://avatars.githubusercontent.com/u/3449932?v=4",
@@ -28,7 +17,18 @@
         "projectManagement",
         "doc"
       ]
-    }
+    },
+    {
+      "login": "lucasreichert3",
+      "name": "Lucas Reichert",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39280222?v=4",
+      "profile": "https://github.com/lucasreichert3",
+      "contributions": [
+        "code",
+        "design",
+        "doc"
+      ]
+    },
   ],
   "contributorsPerLine": 7,
   "projectName": "tecnologia-design-tokens",
