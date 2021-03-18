@@ -93,6 +93,7 @@ jobs:
         run: |
           sh ./scripts/deploy.sh
         env:
+          OLD_VERSION: ${{ steps.publish.outputs.old-version }}
           VERSION: ${{ steps.publish.outputs.version }}
           BASE_PATH: code/
           CI: true
