@@ -1,5 +1,11 @@
 # Release notes
 
+## 0.1.0-0
+
+### Improvements
+
+- Create a folder for `version` on CDN.
+
 ## 0.1.0
 
 ### Features
