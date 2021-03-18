@@ -2,7 +2,7 @@ name: Deploy to NPM and CDN
 
 on:
   push:
-    branches: [master, develop]
+    branches: [master]
 
 jobs:
   build_and_test:
@@ -29,18 +29,17 @@ jobs:
           node-version: "14.1.x"
 
       - run: |
+          cd code
           npm ci
           npm run build --if-present
-          npm test
 
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
         with:
           retention-days: 7
-          name: tecnologia-webcomponents # artifact name
+          name: tecnologia-design-tokens # artifact name
           path: |
             dist
-            loader
 
   deploy:
     needs: build_and_test
@@ -55,21 +54,31 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v2
         with:
-          name: tecnologia-webcomponents
-          path: .
+          name: tecnologia-design-tokens
+          path: code
 
       # NPM PUBLISH
-      - name: Publish to NPM if version has been updated
-        uses: pascalgn/npm-publish-action@1.3.6
+      - id: publish
+        name: Publish to NPM if version has been updated
+        uses: JS-DevTools/npm-publish@v1
         with:
-          tag_name: "v%s"
-          tag_message: "v%s"
-          commit_pattern: "^[Rr]elease (\\S+)"
-          workspace: "." # artifact directory
-          publish_args: "--non-interactive"
+          package: ./code/package.json
+          token: ${{ secrets.NPM_TOKEN }}
+          access: public
+          tag: ${{ steps.publish.outputs.version }}
+
+      - name: Create Release
+        if: steps.publish.outputs.type != 'none'
+        id: create_release
+        uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # automatically generated
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ steps.publish.outputs.version }}
+          release_name: Release ${{ steps.publish.outputs.version }}
+          body: ${{ steps.publish.outputs.version }}
+          draft: false
+          prerelease: false
 
       # CDN DEPLOY
       - name: Configure AWS credentials for CDN account
@@ -81,9 +90,9 @@ jobs:
 
       - name: Deploy CDN
         run: |
-          sh ./scripts/check-file.sh
           sh ./scripts/deploy.sh
         env:
+          BASE_PATH: code/
           CI: true
           AWS_CLOUDFRONT_DIST_ID: ${{ secrets.AWS_CLOUDFRONT_DIST_ID }}
           FILE: ./dist/tecnologia-webcomponents/tecnologia-webcomponents.js
