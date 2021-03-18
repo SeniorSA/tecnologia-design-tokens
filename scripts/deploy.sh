@@ -11,7 +11,7 @@ echo "Prepare to invalidade cache on CloudFront"
 
 aws cloudfront create-invalidation --distribution-id ${AWS_CLOUDFRONT_DIST_ID} --paths "/platform/tecnologia-design-tokens/${GITHUB_REF##*/}/*"
 
-if [ -f $VERSION ]; then
+if [ ! -f $VERSION ]; then
   echo "Uploading to $VERSION folder!"
 
   aws s3 sync ${BASE_PATH}dist ${BUCKET}${VERSION}
