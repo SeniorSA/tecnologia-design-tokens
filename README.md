@@ -1,5 +1,6 @@
 # Tecnologia design tokens
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
+![npm (scoped)](https://img.shields.io/npm/v/@seniorsistemas/tecnologia-design-tokens?style=flat-square) [![Deploy to NPM and CDN](https://github.com/SeniorSA/tecnologia-design-tokens/actions/workflows/deploy.yml/badge.svg)](https://github.com/SeniorSA/tecnologia-design-tokens/actions/workflows/deploy.yml) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
