@@ -93,6 +93,7 @@ jobs:
         run: |
           sh ./scripts/deploy.sh
         env:
+          VERSION: ${{ steps.publish.outputs.version }}
           BASE_PATH: code/
           CI: true
           AWS_CLOUDFRONT_DIST_ID: ${{ secrets.AWS_CLOUDFRONT_DIST_ID }}
