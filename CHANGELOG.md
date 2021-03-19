@@ -1,5 +1,11 @@
 # Release notes
 
+## 0.2.1
+
+### Fixes
+
+- Change from `.font-title` to `text-title`
+
 ## 0.2.0
 
 ### Features
@@ -9,13 +15,13 @@
   - Creating minified files.
   - Copy SCSS files to `dist` folder.
 
-### Fix
+### Fixes
 
 - Move `LICENSE` for project root.
 
 ## 0.1.2
 
-### Fix
+### Fixes
 
 - Deploy to version folder on CDN only when the version changed.
   
