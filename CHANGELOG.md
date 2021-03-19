@@ -4,7 +4,7 @@
 
 ### Fixes
 
-- Change from `.font-title` to `text-title`
+- Change from `.font-title` to `.text-title`
 
 ## 0.2.0
 
