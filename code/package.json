@@ -22,7 +22,6 @@
     "build:watch": "chokidar \"./properties/**/*.json\" -c \"npm run build\"",
     "gulp": "gulp"
   },
-  "dependencies": {},
   "devDependencies": {
     "chokidar-cli": "^2.1.0",
     "gulp": "^4.0.2",
