@@ -12,12 +12,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js
+
+      - name: Configure NodeJS
         uses: actions/setup-node@v1
         with:
-          node-version: "14.x"
-      - run: cd code
-      - run: npm ci
-      - run: npm run build --if-present
-        env:
-          CI: true
+          node-version: "14.1.x"
+
+      - name: Install dependencies and build
+        run: |
+          cd code
+          npm ci
+          npm run build --if-present
