@@ -43,5 +43,8 @@
   },
   "repository": {
     "url": "git+https://github.com/SeniorSA/tecnologia-design-tokens.git"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
   }
 }
