@@ -9,6 +9,7 @@
 ### Fixes
 
 - Resolved undefined variable: `$font-family-sans-serif-font-3-family`
+- Resolved GitHub Action on PRs.
 
 ## 0.2.1
 
