@@ -1,5 +1,16 @@
 # Release notes
 
+## 0.3.0
+
+### Features
+
+- Added breakpoint and screen sizes tokens
+
+### Fixes
+
+- Resolved undefined variable: `$font-family-sans-serif-font-3-family`
+- Resolved GitHub Action on PRs.
+
 ## 0.2.1
 
 ### Fixes

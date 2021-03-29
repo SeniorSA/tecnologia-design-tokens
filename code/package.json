@@ -1,6 +1,6 @@
 {
   "name": "@seniorsistemas/tecnologia-design-tokens",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Design Tokens for BPM Suite projects",
   "license": "MIT",
   "author": {
@@ -22,7 +22,6 @@
     "build:watch": "chokidar \"./properties/**/*.json\" -c \"npm run build\"",
     "gulp": "gulp"
   },
-  "dependencies": {},
   "devDependencies": {
     "chokidar-cli": "^2.1.0",
     "gulp": "^4.0.2",
@@ -44,5 +43,8 @@
   },
   "repository": {
     "url": "git+https://github.com/SeniorSA/tecnologia-design-tokens.git"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
   }
 }
