@@ -1,5 +1,11 @@
 # Release notes
 
+## Unreleased
+
+### Fixes
+
+- Added new Gulp task `clean` for clear `dist` folder before build command run and keep a single minified files per CSS.
+
 ## 0.3.0
 
 ### Features

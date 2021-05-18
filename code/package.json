@@ -15,7 +15,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "style-dictionary build && npm run build:sass && gulp",
+    "build": "gulp clean && style-dictionary build && npm run build:sass && gulp",
     "style-dictionary": "style-dictionary build",
     "build:sass": "sass --style expanded --source-map --embed-sources --no-error-css web/scss/:dist/web/css/",
     "sass:watch": "sass --style expanded --source-map --embed-sources --no-error-css web/scss/:dist/web/css/ --watch",
