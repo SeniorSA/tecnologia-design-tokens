@@ -14,6 +14,17 @@
           "format": "css/variables"
         }
       ]
+    },
+    "flutter": {
+      "transformGroup": "flutter",
+      "buildPath": "dist/tokens/flutter/",
+      "files": [
+        {
+          "destination": "tecnologia_design_tokens.dart",
+          "format": "flutter/class.dart",
+          "className": "TecnologiaDesignTokens"
+        }
+      ]
     }
   }
 }
